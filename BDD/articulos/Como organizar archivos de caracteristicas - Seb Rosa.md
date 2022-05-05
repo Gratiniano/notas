@@ -47,17 +47,21 @@ Esto coincide con la orientación de *BDD* y *SBE*.
 ### Navegando por la documentación
 Un arbol jerárquico de carpetas es una forma simple de organizar la información (similar a la tabla de contenidos o índice de un libro).
 
-Ejemplo: entrega de pizzas on-line.
+`Ejemplo: entrega de pizzas on-line.
+
 ![fig2](https://static1.smartbear.co/cucumber/media/images/blog/gwt-fig2.png)
 
 ### Acercar/Alejar
 El nivel de detalle deseado se consigue mediante la anidación de las carpetas.
 ![fig3](https://cucumber.io/cucumber/media/images/blog/gwt-fig3.png)
 
+
+
 ### Especificación de comportamientos compartidos
 Ejemplo: funcion send_email.feature.
 Su comportamiento debe describirse en un único archivo de funciones.
 ![fig4](https://cucumber.io/cucumber/media/images/blog/gwt-fig4.png)
+
 
 <hr>
 **Como compartir funciones entre escenarios**
@@ -72,6 +76,8 @@ Feature: enviar enlace único.
   - Enviar correo electrónico - ../../../communication/email/send_email.feature
     
 ```
+<hr>
+
 ### Documentación dirigida
 Diferentes consumidores requieren información diferente (clientes, desarrolladores, testers, etc.).
 
