@@ -85,7 +85,7 @@ Diferentes consumidores requieren información diferente (clientes, desarrollado
 ![fig5](https://cucumber.io/cucumber/media/images/blog/gwt-fig5.png)
 
 ### Opcion 2: Intercalar la documentación específica.
-![fig6](https://cucumber.io/cucumber/media/images/blog/gwt-fig5.png)
+![fig6](https://cucumber.io/cucumber/media/images/blog/gwt-fig6.png)
 
 <hr>
 
