@@ -1,6 +1,13 @@
+# Expedientes
+
 #DEFINICION Un expediente registra una inscripción/modificación/baja en el RIA.
 
+Un expediente **siempre está asociado a una empresa**.
+
+#DEFINICION *Empresa -* Persona física o jurídica identificada por un NIF.
+
 **No es posible realizar ninguna modificación sobre el RIA si no existe previamente un expediente al que asociarla**.
+
 
 Un expediente se puede iniciar bien a instancia del **interesado**, bien de **oficio**.
 
@@ -45,7 +52,48 @@ Cada acción puede implicar necesidades de documentación distintas.
 
 
 
+## Expedientes iniciados de oficio
+No están asociados a una solicitud.
+
+Deben estar motivados.
+
+Posibles motivos de expedientes de oficio son:
+	- Corrección de datos introducidos erroneamente durante la mecanización de las solicitudes.
+	- Campañas de actualización de datos asociadas a programas específicos.
+	- #PENDIENTE ****Ampliar con las usuarias***.
 
 
+## Ciclo de vida del expediente.
+Actualmente solo hay tres estados posibles, **ABIERTO**, **CERRADO**, e **INDETERMINADO**.
+Esta situación deviene de una mala gestión de la aplicación actual.
+
+**Propuesta estados posibles**
+| Estado | Descripción |
+|:--|:--|
+| Abierto | Permite la edición de los datos asociados a la empresa. 
+|Cerrado | Se terminó satisfactoriamente la edición de los datos asociados a esta empresa.<br> **Un expediente CERRADO no puede reabrirse**.
+| Desistido | El interesado solicitó la cancelación de la tramitación del expediente. |
+| Cancelado | El usuario canceló la tramitación del expediente.<br> **Todos los datos introducidos deberían ignorarse**. |
 
 
+***Ciclo de vida del expediente***
+
+```plantuml
+@startuml component
+[*] -> Abierto
+
+Abierto -> Cerrado
+Cerrado -->[*]
+
+Abierto -> Desistido
+Abierto -> Cancelado
+
+
+Desistido -->[*]
+Cancelado-->[*]
+
+@enduml
+```
+
+
+#PENDIENTE ***¿Existe alguna circunstancia en que pueda reabrirse un expediente ya cerrado?***
