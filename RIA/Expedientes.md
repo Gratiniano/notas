@@ -6,7 +6,7 @@ Un expediente **siempre está asociado a una empresa**.
 
 #DEFINICION *Empresa -* Persona física o jurídica identificada por un NIF.
 
-**No es posible realizar ninguna modificación sobre el RIA si no existe previamente un expediente al que asociarla**.
+#ADVERTENCIA **No es posible realizar ninguna modificación sobre el RIA si no existe previamente un expediente al que asociarla**.
 
 
 Un expediente se puede iniciar bien a instancia del **interesado**, bien de **oficio**.
@@ -14,39 +14,13 @@ Un expediente se puede iniciar bien a instancia del **interesado**, bien de **of
 
 ## Expediente a instancia del interesado.
 
-Un expediente a instancia del interesado está basado, **siempre**, en una **solicitud**.
+#DEFINICION *Expediente a instancia del interesado -* Se inicia a petición de una persona física o jurídica y **siempre debería estar basado en la presentación en una [solicitud](../Solicitudes)**.
 
-#DEFINICION Una solicitud es un documento donde una empresa o particular expresa su intención de realizar una modificación en el RIA y debería estar acompañado de la Ficha Técnica y/o documentación acreditativa necesaria.
+Cada expediente a instancia del interesado debería poder referenciar tanto la solicitud cómo el resto de documentación aportada.
 
+#ADVERTENCIA ***En la base de datos actual no existe este enlace al documento de solicitud ni al resto documentación aportada****.
 
-<hr>
-**SOLICITUDES AL REGISTRO DE INDUSTRIAS AGROALIMENTARIAS**
-
-La presentación de solicitudes se define  a través del procedimiento ***[S707 - 020127 REGISTRO DE INDUSTRIAS AGRARIAS](https://www.jccm.es/tramitesygestiones/registro-de-industrias-agrarias)***.
-
-Existe un documento de solicitud [S707_25281.DOC](https://www.jccm.es/sites/www.jccm.es/files/modelos/S707_25281.DOC) y una [Ficha Técnica](https://www.jccm.es/sites/www.jccm.es/files/modelos/S707_28664.XLS).
-
-Además de los formatos Word y Excel indicados, las solicitudes y ficha técnica pueden presentarse en formato papel de forma presencial.
-
-La documentación adicional puede admitir tanto papel como cualquier otro formato incluyendo documentos o imagenes escaneadas.
-
-<hr>
-
-Cada expediente a instancia del interesado debe poder referenciar tanto la solicitud cómo el resto de documentación aportada.
-
-En caso de no aportar toda la documentación requerida el expediente no debería poder darse por válido.
-
-#ADVERTENCIA En la base de datos actual no existe este enlace al documento de solicitud ni al resto documentación aportada.
-
-Un **solicitud** puede implicar una o varias de las siguientes acciones.
-	- Inscripción de una industria en el RIA.
-	- Modificación de los datos de una industria.
-	- Baja de una industria en el RIA
-	- Cambio o ampliación de la actividad.
-	- Cambio en la titularidad de una industria.
-	- Solicitud de emisión de un certificado para una industria.
-
-Cada acción puede implicar necesidades de documentación distintas.
+En caso de no aportar toda la documentación requerida el expediente no debería poder darse por válido. 
 
 #ADVERTENCIA No existe un catálogo de documentación necesaria ni a nivel de expediente ni a nivel de tipo de acción solicitada.
 
@@ -63,37 +37,42 @@ Posibles motivos de expedientes de oficio son:
 	- #PENDIENTE ****Ampliar con las usuarias***.
 
 
+
+
 ## Ciclo de vida del expediente.
 Actualmente solo hay tres estados posibles, **ABIERTO**, **CERRADO**, e **INDETERMINADO**.
 Esta situación deviene de una mala gestión de la aplicación actual.
 
 **Propuesta estados posibles**
-| Estado | Descripción |
+| Estado               | Descripción  |   
 |:--|:--|
-| Abierto | Permite la edición de los datos asociados a la empresa. 
-|Cerrado | Se terminó satisfactoriamente la edición de los datos asociados a esta empresa.<br> **Un expediente CERRADO no puede reabrirse**.
-| Desistido | El interesado solicitó la cancelación de la tramitación del expediente. |
-| Cancelado | El usuario canceló la tramitación del expediente.<br> **Todos los datos introducidos deberían ignorarse**. |
+| Abierto              | Permite la edición de los datos asociados a la empresa. |
+| Cerrado              | Se terminó satisfactoriamente la edición de los datos asociados a industria.<br> **Un expediente CERRADO no puede reabrirse**. |                       |                                                                                                                                    
+| Desistido            | El **interesado** solicitó la cancelación de la tramitación del expediente. |                                                                                                                                                                                                     
+| Trámite de Audiencia | Se ha solicitado documentación no presentada junto a la solicitud.                                                             
 
 
 ***Ciclo de vida del expediente***
-
 ```plantuml
 @startuml component
-[*] -> Abierto
 
+state "Tramite de \naudiencia" as TA
+[*] ->  Abierto
+
+Abierto -->TA
+TA --> Abierto
 Abierto -> Cerrado
 Cerrado -->[*]
 
 Abierto -> Desistido
-Abierto -> Cancelado
-
 
 Desistido -->[*]
-Cancelado-->[*]
 
 @enduml
 ```
 
 
-#PENDIENTE ***¿Existe alguna circunstancia en que pueda reabrirse un expediente ya cerrado?***
+#PENDIENTE ***¿Existe alguna circunstancia en que pueda reabrirse un expediente ya cerrado?*** ¿O necesitaría un nuevo expediente de Oficio?
+
+
+
