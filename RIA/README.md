@@ -4,6 +4,7 @@
 El proposito es documentar los conocimientos y dudas que se tiene sobre la aplicación RIA para facilitar la elicitación de requisitos antes de escribir las *features* en Gherkin.
 
 No hay de momento una estructura definida. Es más bien... tirar del hilo.
+
 ![fig1](./_assets/under_construction.png)
 
 
@@ -26,8 +27,9 @@ No hay de momento una estructura definida. Es más bien... tirar del hilo.
 
 ## Necesitas
 Para visualizar correctamente los diagrámas que acompañan al texto es necesario.
-	- Editor markdown [Obsidian](https://obsidian.md/).
-	- Plugin [Obsidian-Kroki]((https://github.com/gregzuro/obsidian-kroki)Permite renderizar los diagramas cómo imagen cuando se exporta el documento a PDF.
-	- Plugin  [Obsidian-PlantUML ](https://github.com/joethei/obsidian-plantuml) Permite definir diagrámas UML mediante descripciones textuales.
+- Editor markdown [Obsidian](https://obsidian.md/).
+- 
+- Plugin [Obsidian-Kroki]((https://github.com/gregzuro/obsidian-kroki)Permite renderizar los diagramas cómo imagen cuando se exporta el documento a PDF.
+- Plugin  [Obsidian-PlantUML ](https://github.com/joethei/obsidian-plantuml) Permite definir diagrámas UML mediante descripciones textuales.
 
 Los plugins indicados se instalan en Obsidian mediante la opción ***Settings -> Community plugins***.
