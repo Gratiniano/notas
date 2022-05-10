@@ -37,7 +37,7 @@ Formato: **PP/XXXXX**.
 
 Este código se genera cuando se asocia por primera vez  la instalación con la empresa  y la actividad a desarrollar.
 
-![[Red_question_icon.png]] #PENDIENTE ¿Un cambio de actividad en un establecimiento supondría la generación de un nuevo código RIA? 
+![fig1](./_assets/Red_question_icon.png) #PENDIENTE ¿Un cambio de actividad en un establecimiento supondría la generación de un nuevo código RIA? 
 
 Los códigos RIA **no son reutilizables**.
 
@@ -49,7 +49,7 @@ Un establecimiento puede mantener simultaneamente múltiples relaciones de **arr
 Un establecimiento sólo puede mantener una única relación de **propiedad** vigente de forma simultanea.
 
 Un establecimiento solo puede mantener una única relación de tenencia vigente simultaneamente con la misma empresa.
-![[Red_question_icon.png]] #PENDIENTE ¿Un establecimiento puede tene multiples relaciones de arrendamiento simultaneamente con la misma empresa si cada una de ellas corresponde a una actividad económica distinta? ¿Es esto relevante?
+![fig1](./_assets/Red_question_icon.png) #PENDIENTE ¿Un establecimiento puede tene multiples relaciones de arrendamiento simultaneamente con la misma empresa si cada una de ellas corresponde a una actividad económica distinta? ¿Es esto relevante?
 
 
 

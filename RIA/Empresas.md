@@ -3,7 +3,7 @@
 #DEFINICION *Empresa -* Persona física o jurídica identificada por un NIF.
 
 <hr>
-![[Information_icon.png]]
+![fig1](./_assets/Information_icon.png)
  **Registro de terceros** 
 	* Las empresas, junto a sus datos asociados, deberían estár registradas en el **registro de terceros**.
 	* Idealmente, el registro de una empresa en RIA provocaría la inclusión en dicho registro.

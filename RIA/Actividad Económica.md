@@ -79,5 +79,5 @@ Una [industria](Establecimientos.md) debería realizar, al menos, una actividad 
 
 
 #ADVERTENCIA Parece razonable pensar que debería haber una jerarquía de tres niveles Sector/Subsector/Actividad y no dos jerarquías paralelas que no parecen aportar información adicional.
-#PENDIENTE Concretar con las usuarias gestoras. ![[Red_question_icon.png]]
+#PENDIENTE Concretar con las usuarias gestoras. ![fig2](./_assets/Red_question_icon.png)
 

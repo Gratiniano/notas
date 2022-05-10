@@ -4,7 +4,7 @@
 El proposito es documentar los conocimientos y dudas que se tiene sobre la aplicación RIA para facilitar la elicitación de requisitos antes de escribir las *features* en Gherkin.
 
 No hay de momento una estructura definida. Es más bien... tirar del hilo.
-![[under_construction.png]]
+![fig1](../_assets/under_construction.png)
 
 
 ## Referencias
@@ -20,8 +20,8 @@ No hay de momento una estructura definida. Es más bien... tirar del hilo.
 - #DEFINICION  Define un concepto o entidad lo suficientemente importante como para merecer documentarse.
 - #Nota Información anecdótica, interesante pero no crítica,
 - #PENDIENTE Actividad o Consulta pendiente de hacerse.
-- ![[Information_icon.png]] información pertinente. Generalmente para introducir contexto.
-- ![[Red_question_icon.png]] Destaca un concepto o cuestión que es necesario aclarar con otros miembros.
+- ![fig1](./_assets/Information_icon.png) información pertinente. Generalmente para introducir contexto.
+- ![fig2](./_assets/Red_question_icon.png) Destaca un concepto o cuestión que es necesario aclarar con otros miembros.
 
 
 ## Necesitas
