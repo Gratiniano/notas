@@ -6,8 +6,8 @@
 ##### Una solicitud siempre se inicia a instancias de una [persona física o jurídica](./Empresas)
 
 <hr>
-![info](./assets/information_icon.svg)
-| |  SOLICITUDES AL REGISTRO DE INDUSTRIAS AGROALIMENTARIAS                 |
+ 
+|![[Information_icon.png]] |  SOLICITUDES AL REGISTRO DE INDUSTRIAS AGROALIMENTARIAS                 |
 |:--|:--|
 | |La presentación de solicitudes se define  a través del procedimiento ***[S707 - 020127 REGISTRO DE INDUSTRIAS AGRARIAS](https://www.jccm.es/tramitesygestiones/registro-de-industrias-agrarias)***.|
 | |Existe un documento de solicitud [S707_25281.DOC](https://www.jccm.es/sites/www.jccm.es/files/modelos/S707_25281.DOC) y una [Ficha Técnica](https://www.jccm.es/sites/www.jccm.es/files/modelos/S707_28664.XLS).|

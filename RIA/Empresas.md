@@ -3,7 +3,7 @@
 #DEFINICION *Empresa -* Persona física o jurídica identificada por un NIF.
 
 <hr>
-![info](./assets/information_icon.svg)
+![[Information_icon.png]]
  **Registro de terceros** 
 	* Las empresas, junto a sus datos asociados, deberían estár registradas en el **registro de terceros**.
 	* Idealmente, el registro de una empresa en RIA provocaría la inclusión en dicho registro.
@@ -19,9 +19,6 @@
 * Una empresa puede aportar datos de contacto.
 * Una empresa puede tener un representante que, a su vez, debería ser incluido en el **registro de terceros**.
 
-### Relación de empresa con Industria
-
-
 
 ### Alta de empresa
 Una empresa puede ser incluida en el sistema debido a:
@@ -30,5 +27,5 @@ Una empresa puede ser incluida en el sistema debido a:
 
 #ADVERTENCIA  el alta de una empresa en RIA siempre debería estar asociado al alta de una Industria.
 
-
+#PENDIENTE  Terminar definicion empresa
 
