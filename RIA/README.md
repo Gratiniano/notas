@@ -4,7 +4,7 @@
 El proposito es documentar los conocimientos y dudas que se tiene sobre la aplicación RIA para facilitar la elicitación de requisitos antes de escribir las *features* en Gherkin.
 
 No hay de momento una estructura definida. Es más bien... tirar del hilo.
-![fig1](../_assets/under_construction.png)
+![fig1](./_assets/under_construction.png)
 
 
 ## Referencias
