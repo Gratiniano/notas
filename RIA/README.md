@@ -5,7 +5,7 @@ El proposito es documentar los conocimientos y dudas que se tiene sobre la aplic
 
 No hay de momento una estructura definida. Es más bien... tirar del hilo.
 
-![fig1](./_assets/under_construction.png)
+![fig](./_assets/under_construction.png)
 
 
 ## Referencias
@@ -21,14 +21,13 @@ No hay de momento una estructura definida. Es más bien... tirar del hilo.
 - #DEFINICION  Define un concepto o entidad lo suficientemente importante como para merecer documentarse.
 - #Nota Información anecdótica, interesante pero no crítica,
 - #PENDIENTE Actividad o Consulta pendiente de hacerse.
-- ![fig1](./_assets/Information_icon.png) información pertinente. Generalmente para introducir contexto.
-- ![fig2](./_assets/Red_question_icon.png) Destaca un concepto o cuestión que es necesario aclarar con otros miembros.
+- ![fig](./_assets/Information_icon.png) información pertinente. Generalmente para introducir contexto.
+- ![fig](./_assets/Red_question_icon.png) Destaca un concepto o cuestión que es necesario aclarar con otros miembros.
 
 
 ## Necesitas
-Para visualizar correctamente los diagrámas que acompañan al texto es necesario.
+Para visualizar correctamente los diagramas que acompañan al texto es necesario.
 - Editor markdown [Obsidian](https://obsidian.md/).
-- 
 - Plugin [Obsidian-Kroki]((https://github.com/gregzuro/obsidian-kroki)Permite renderizar los diagramas cómo imagen cuando se exporta el documento a PDF.
 - Plugin  [Obsidian-PlantUML ](https://github.com/joethei/obsidian-plantuml) Permite definir diagrámas UML mediante descripciones textuales.
 
