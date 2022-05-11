@@ -21,6 +21,7 @@ No hay de momento una estructura definida. Es más bien... tirar del hilo.
 - #DEFINICION  Define un concepto o entidad lo suficientemente importante como para merecer documentarse.
 - #Nota Información anecdótica, interesante pero no crítica,
 - #PENDIENTE Actividad o Consulta pendiente de hacerse.
+- #FEATURE Indica una feature en Gherkin
 - ![fig](./_assets/Information_icon.png) información pertinente. Generalmente para introducir contexto.
 - ![fig](./_assets/Red_question_icon.png) Destaca un concepto o cuestión que es necesario aclarar con otros miembros.
 

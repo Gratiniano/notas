@@ -70,4 +70,10 @@ Un establecimiento puede tener, opcionalmente, una **fecha de licencia de apertu
 - Alta
 - Modificación
 - Cambio de actividad.
-- 
+- Baja
+
+# Features
+
+```Gherkin
+
+```
