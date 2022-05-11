@@ -28,6 +28,11 @@ Está expresada cómo un código de 20 caracteres
 	-   Identificación de inmueble: 0000
 	-   Caracteres de control: FP
 
+**¿Cómo distinguir si una referencia catastral es rústica o urbana?**
+En el caso de los inmuebles rústicos el **6º caracter** es alfabético.
+En el caso de los inmuebles urbanos el **6º caracter** es numérico.
+
+Ref: [Portal de la DGC: La referencia catastral (meh.es)](https://www.catastro.meh.es/esp/referencia_catastral.asp?msclkid=f58996a1d10b11ec8e3156dfee9e3206)
 <hr>
 
 ## Propietario

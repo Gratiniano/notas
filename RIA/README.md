@@ -21,10 +21,15 @@ No hay de momento una estructura definida. Es más bien... tirar del hilo.
 - #DEFINICION  Define un concepto o entidad lo suficientemente importante como para merecer documentarse.
 - #Nota Información anecdótica, interesante pero no crítica,
 - #PENDIENTE Actividad o Consulta pendiente de hacerse.
-- #FEATURE Indica una feature en Gherkin
+- #FEATURE Indica una Característica en Gherkin
 - ![fig](./_assets/Information_icon.png) información pertinente. Generalmente para introducir contexto.
 - ![fig](./_assets/Red_question_icon.png) Destaca un concepto o cuestión que es necesario aclarar con otros miembros.
 
+## Features
+Los escenarios de las distintas #FEATURE se han clasificado con una serie de etiquetas para distinguir su propósito.
+
+-  @API_REST. Escenario que serviría para la validación de un conjunto de datos sin implicaciones temporales o de interfaz.
+-  @UI_Test. Escenario que serviría para la validación de una secuencia de acciones acciones (dado que seleccione algo puedo seleccionar otra cosa).  Util para modelar el comportamiento de una interfaz.
 
 ## Necesitas
 Para visualizar correctamente los diagramas que acompañan al texto es necesario.

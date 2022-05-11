@@ -45,7 +45,7 @@ Los códigos RIA **no son reutilizables**.
 
 
 ## Tenencia
-#DEFINICION *Tenencia -* Relación de titularidad entre una **[empresa agroalimentaria](./Empresas)** y una instalación en la que desarrolla, al menos,  una actividad económica.  Puede ser de **propiedad** o de **arrendamiento**. 
+#DEFINICION *Tenencia -* Relación de titularidad entre una **[empresa agroalimentaria](Empresas.md)** y una instalación en la que desarrolla, al menos,  una actividad económica.  Puede ser de **propiedad** o de **arrendamiento**. 
 
 Una relación de tenencia de una empresa sobre una instalación puede estar vigente o haber sido finalizada.
 

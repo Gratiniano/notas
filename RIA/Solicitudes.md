@@ -3,7 +3,7 @@
 
 #DEFINICION Una solicitud es un documento donde una empresa o particular expresa su intención de realizar una modificación en el RIA y debería estar acompañado de la Ficha Técnica y/o documentación acreditativa necesaria.
 
-##### Una solicitud siempre se inicia a instancias de una [persona física o jurídica](./Empresas)
+##### Una solicitud siempre se inicia a instancias de una [persona física o jurídica](Empresas.md)
 
 <hr>
 ![fig](./_assets/Information_icon.png)   **SOLICITUDES AL REGISTRO DE INDUSTRIAS AGROALIMENTARIAS**       

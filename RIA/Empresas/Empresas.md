@@ -43,9 +43,27 @@ Una empresa puede ser incluida en el sistema debido a:
 	- una [Solicitud de inscripción](../Solicitudes) presentada por una persona no existente en RIA.	
 	- de oficio, por parte de la Administración.
 
-![fig](./_assets/red_question_icon.png) #PENDIENTE ¿En qué circunstancias puede darse de alta de oficio una empresa?
+![fig](Red_question_icon.png) #PENDIENTE ¿En qué circunstancias puede darse de alta de oficio una empresa?
 
 #ADVERTENCIA  el alta de una empresa en RIA siempre debería estar asociado al alta de un Establecimiento.
+
+
+## Baja de empresa
+Podemos distinguir dos casos
+
+### Borrado lógico.
+Una empresa puede ser dada de baja cuando
+	- Haya sido dada de alta de oficio por parte de la Administración. #PENDIENTE [[Empresas#Alta de empresa]]
+	- No tenga ninguna asociacion de tenencia activa.
+
+En este caso no aparecerá en listados ni informes.
+
+
+#PENDIENTE Explorar las implicaciones que puede tener una baja de empresa.
+### Cese de actividad
+Se puede establecer que una empresa ha cesado su actividad cuando:
+- El solicitante original ha solicitado su baja en el RIA mediante una [Solicitud](../Solicitudes).
+ 
 
 
 ## Features
@@ -54,6 +72,10 @@ Una empresa puede ser incluida en el sistema debido a:
 #language:es
 
 Característica: los usuarios pueden registrar nuevas empresas en RIA.
+
+	# Esta característica depende de la característica validacion_consistencia_localidad
+	# (../shared/validacion_consistencia_localidad.feature).
+
 
 Antecedentes: 
 	Dado que nos encontramos en la pantalla de creación de empresas
@@ -119,32 +141,41 @@ Escenario: Registrar una nueva empresa que cuyo CIF fue marcado en fin de activi
 
 #FEATURE Modificación de una empresa en RIA
 ```Gherkin
-#language=es
+#language:es
 
 Caracteristica: modificación de datos de una empresa
+
+
+	# Esta característica depende de la característica validacion_consistencia_localidad
+	# (../shared/validacion_consistencia_localidad.feature).
 
 Antecedentes: 
 	Dado que estamos en la pantalla de modificación de empresa
 		Y en el repositorio existen las empresas  
-		  | nif          | nombre     | prov | muni | loc | cod post | direccion      | F.Jur | F.Datos    | Cese | Borrado |  
-		  | G16034662    | ALOZANO    | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 01/01/2020 | N    | N       |  
-		  | 52761552N    | BLEONES    | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 01/01/2020 | S    | N       |  
-		  | B16108045    | RECAVIN    | 16  | 249  | 0    | 16415    | C/LIMON 5      | 9     | 01/01/2020 | N    | S       |  
+		  | nif       | nombre     | prov | muni | loc | cod post | direccion      | F.Jur | F.Datos    | Cese | Borrado |  
+		  | G16034662 | ALOZANO    | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 01/01/2020 | N    | N       |  
+		  | 52761552N | BLEONES    | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 01/01/2020 | S    | N       |  
+		  | B16108045 | RECAVIN    | 16  | 249  | 0    | 16415    | C/LIMON 5      | 9     | 01/01/2020 | N    | S       |  
 		Y la fecha en curso es '31/12/2021'
 		Y se han introducido, al menos, los datos mínimos de empresa
 
 
 
-Regla: la modificación de los datos de una empresa actualiza la cronología pero no el estado.
+Regla: la modificación de los datos de una empresa actualiza los datos y la cronología pero no el estado.
 
 	Escenario: Todos los datos empleados son válidos 
 	Cuando queremos modificar los siguientes datos de empresas en RIA
-	 | nif          | nombre     | prov | muni | loc | cod post | direccion      | F.Jur |  
-	 | G16034662    | FSANCHO    | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 
-	 | 52761552N    | BLEONES    | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 
-	 | B16108045    | RECAVIN    | 16  | 249  | 0    | 16415    | C/LIMON 5      | 9     | 	 
-	
-	Entonces <postcondicion>
-		Y <postcondicion>
-	
+	 | nif          | nombre     | prov | muni | loc  | cod post | direccion      | F.Jur |  
+	 | G16034662    | MNIETO     | 2    | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 
+	 | 52761552N    | BLEONES    | 16   | 78   | 9    | 02600    | C/VIRGEN, 23   | 9     | 
+		 
+	Entonces en el repositorio deberían aparecer las siguientes empresas
+		  | nif          | nombre     | prov | muni | loc | cod post | direccion      | F.Jur | F.Datos    | Cese | Borrado |  
+		  | G16034662    | MNIETO     | 2   | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 01/01/2020 | N    | N       |  
+		  | 52761552N    | BLEONES    | 16  | 78   | 9    | 02600    | C/VIRGEN, 23   | 9     | 01/01/2020 | S    | N       |  
+		
+
+
 ```
+
+#FEATURE Baja de una empresa
