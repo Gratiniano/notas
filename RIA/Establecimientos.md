@@ -66,6 +66,19 @@ Un establecimiento puede tener, opcionalmente, una **fecha de licencia de apertu
 #PENDIENTE finalizar definición establecimiento.
 
 
+## Listados de establecimientos.
+#### Listado de Establecimientos
+![fig](./assets/pantalla_listados_establecimientos.PNG)
+![fig](./assets/listado_establecimientos.PNG)
+
+#### Ficha de establecimiento
+![fig](./assets/pantalla_imprimir_ficha_establecimiento.PNG)
+* **Ficha Individual** muestra la ficha técnica. No varía de un expediente a otro. Los datos de expediente se incluyen en la sección 'DATOS ADMINISTRATIVOS' y para la *Fecha de cumplimentación de la ficha técnica*.
+[Ficha Técnica Establecimiento](./_assets/impresion_ficha_tecnica.pdf).
+
+* **Certificado de inscripción** muestra un certificado de inscripción. Solo varía el código de expediente.
+* **Oficio de remisión** muestra una carta para acompañar al certificado cuando se envía por correo. Incluyo el código de expediente.
+
 ## Operaciones
 - Alta
 - Modificación

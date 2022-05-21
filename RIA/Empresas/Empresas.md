@@ -134,7 +134,7 @@ Regla: los datos de las empresas en fin de actividad se reescriben.
 
 Regla: No se puede volver a registrar una empresa que está activa.
 
-Escenario: Registrar una nueva empresa que cuyo CIF fue marcado en fin de actividad.
+	Escenario: Registrar una nueva empresa que cuyo CIF fue marcado en fin de actividad.
 		Dado que queremos registrar una empresa con los siguientes datos 
 			| nif       | nombre   | 
 			| 52761552N | RALONSO  | 
@@ -171,7 +171,7 @@ Antecedentes:
 
 Regla: la modificación de los datos de una empresa actualiza los datos y la cronología pero no el estado.
 
-	Escenario: Todos los datos empleados son válidos 
+	Esquema del escenario: Todos los datos empleados son válidos 
 		Cuando queremos modificar los siguientes datos de empresas en RIA
 		 | nif          | nombre     | prov | muni | loc  | cod post | direccion      | F.Jur |  
 		 | G16034662    | MNIETO     | 2    | 81   | 0    | 02600    | C/MAYOR 1      | 9     | 
@@ -198,7 +198,7 @@ Característica: Baja de una empresa. Borrado lógico.
 Regla: se pueden dar de baja empresas creadas de oficio sin establecimientos.
 
 
-	Escenario: dar de baja una empresa creada de oficio 
+	Esquema del escenario: dar de baja una empresa creada de oficio 
 		Dado que la empresa <nif> fue creada <tipo_creacion>
 			Y la fecha actual es '31/12/2022'
 			Y tiene <nro_establs> establecimiento(s) asociado(s)
@@ -215,7 +215,7 @@ Regla: se pueden dar de baja empresas creadas de oficio sin establecimientos.
 		
 Regla: se pueden dar de baja empresas por desistimiento del solicitante.
 
-	Escenario: dar de baja empresa por desistimiento
+	Esquema del escenario: dar de baja empresa por desistimiento
 		Dado que la empresa <nif> fue creada <tipo_creacion>
 			Y el solicitante ha manifestado su intención de desistir en la inscripción con fecha <f_solicitada>
 			Y <cumple_desistimiento> cumple las condiciones de desistimiento
@@ -244,7 +244,7 @@ Característica: Baja de una empresa. Cese de actividad.
 
 Regla: El cese de actividad de una empresa en RIA supone, además,  el fin de sus relaciones con establecimientos.
 
-	Escenario: Registrar el cese de actividad de una empresa 
+	Esquema del escenario: Registrar el cese de actividad de una empresa 
 		Dado que la empresa <nif> o su representante <nif_rep> han presentado una solicitud de cese de actividad con fecha <f_solicitada>
 			Y tiene <establs> establecimiento(s) asociado(s)
 		Cuando indicamos que se le dé de baja
